@@ -2,6 +2,7 @@ body {
     font-family: 'Minecraftia', sans-serif;
     font-weight: normal;
     font-style: normal;
+    background-color: blue;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -9,7 +10,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100%;
     overflow: auto;
   }
 
@@ -21,7 +21,7 @@ body {
     background-attachment: fixed;
     transform-origin: center;
     position: relative;
-    height: 100% !important;
+    min-height: 110vh !important;
     width: 100% !important;
     }
     
