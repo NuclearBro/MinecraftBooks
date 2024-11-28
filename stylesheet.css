@@ -23,8 +23,8 @@ body {
     background-attachment: fixed;
     transform-origin: center;
     position: relative;
-    height: calc(var(--vh) * 100);
-    min-height: calc(var(--vh) * 100);
+    height: calc(var(--vh) * 110) !important;
+    min-height: calc(var(--vh) * 110) !important;
     }
     
     .book-item img {
