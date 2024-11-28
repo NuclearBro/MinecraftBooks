@@ -9,6 +9,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 100%;
+    overflow: auto;
   }
 
   @media only screen and (max-width: 768px) {
@@ -16,9 +18,11 @@ body {
     background-image: url('Assets/MobileBackground.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     transform-origin: center;
-    height: 110vh;
-    width: auto;
+    position: relative;
+    height: 100%;
+
     }
     
     .book-item img {
@@ -36,7 +40,7 @@ body {
     }
 
     .overlay-scrollable-content {
-      max-height: 67vh !important; 
+      max-height: 66vh !important; 
     }
 
     .book-item {
