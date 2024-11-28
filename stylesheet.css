@@ -2,6 +2,7 @@ body {
     font-family: 'Minecraftia', sans-serif;
     font-weight: normal;
     font-style: normal;
+    background-color: rgb(121, 121, 121);
     color: #fff;
     margin: 0;
     padding: 0;
@@ -17,11 +18,12 @@ body {
   @media only screen and (max-width: 600px) {
     body {
     background-image: url('Assets/MobileBackground.png');
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     transform-origin: center;
     position: relative;
+    min-height: 100%;
     max-height: var(--vh);
     }
     
