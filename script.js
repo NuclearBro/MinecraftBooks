@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     const books = await Promise.all([
-      fetch("Books/support101.json").then((res) => res.json()),
-      fetch("Books/theDrift.json").then((res) => res.json()),
-      fetch("Books/fate.json").then((res) => res.json()),
-      fetch("Books/openingUp.json").then((res) => res.json()),
-      fetch("Books/goodPlace.json").then((res) => res.json()),
+      fetch("./Books/support101.json").then((res) => res.json()),
+      fetch("./Books/theDrift.json").then((res) => res.json()),
+      fetch("./Books/fate.json").then((res) => res.json()),
+      fetch("./Books/openingUp.json").then((res) => res.json()),
+      fetch("./Books/goodPlace.json").then((res) => res.json()),
       fetch("Books/things.json").then((res) => res.json()),
       fetch("Books/grandFinale.json").then((res) => res.json()),
       fetch("Books/Realization.json").then((res) => res.json()),
