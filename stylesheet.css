@@ -22,7 +22,7 @@ body {
     background-attachment: fixed;
     transform-origin: center;
     position: relative;
-    min-height: 100% !important;
+    min-height: 90% !important;
     }
     
     .book-item img {
