@@ -19,7 +19,7 @@ body {
     body {
     background-image: url('Assets/MobileBackground.png');
     background-size: 100%;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     transform-origin: center;
     position: relative;
