@@ -11,20 +11,16 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: auto;
-    height: calc(var(--vh) * 100);
-    min-height: calc(var(--vh) * 100);
   }
 
   @media only screen and (max-width: 600px) {
     body {
-    background-image: url('Assets/MobileBackground2.png');
-    background-size: 100%;
+    background-image: url('Assets/MobileBackground.png');
+    background-size: 120%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     transform-origin: center;
     position: relative;
-    height: calc(var(--vh) * 110) !important;
-    min-height: calc(var(--vh) * 110) !important;
     }
     
     .book-item img {
