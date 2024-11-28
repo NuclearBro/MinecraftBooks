@@ -11,8 +11,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: auto;
-    height: 110%;
-    min-height: 110%;
+    height: calc(var(--vh) * 100);
+    min-height: calc(var(--vh) * 100);
   }
 
   @media only screen and (max-width: 600px) {
@@ -23,7 +23,8 @@ body {
     background-attachment: fixed;
     transform-origin: center;
     position: relative;
-    min-height: 110% !important;
+    height: calc(var(--vh) * 100);
+    min-height: calc(var(--vh) * 100);
     }
     
     .book-item img {
