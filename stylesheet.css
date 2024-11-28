@@ -17,7 +17,7 @@ body {
 
   @media only screen and (max-width: 600px) {
     body {
-    background-image: url('Assets/MobileBackground.png');
+    background-image: url('Assets/MobileBackground2.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
