@@ -11,14 +11,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: auto;
-    height: calc(var(--vh) * 100);
-    min-height: calc(var(--vh) * 100);
   }
 
   @media only screen and (max-width: 600px) {
     body {
     background-image: url('Assets/MobileBackground.png');
-    background-size: calc(var(--vh) * 100) !important;
+    background-size: 25em;
     background-repeat: no-repeat;
     background-attachment: fixed;
     transform-origin: center;
@@ -45,6 +43,10 @@ body {
 
     .book-item {
       -webkit-tap-highlight-color: transparent;
+    }
+
+    .container-slideshow {
+      max-height: 50vh;
     }
   }
 
