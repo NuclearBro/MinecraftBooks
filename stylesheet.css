@@ -10,6 +10,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: auto;
+    height: 100vh;
+    --vh: 100vh;
   }
 
   @media only screen and (max-width: 600px) {
@@ -20,7 +22,7 @@ body {
     background-attachment: fixed;
     transform-origin: center;
     position: relative;
-    max-height: 90vh !important;
+    max-height: var(--vh);
     }
     
     .book-item img {

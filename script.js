@@ -6,6 +6,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   const overlayContent = document.getElementById("overlay-content");
   const closeButton = document.getElementById("close-button");
 
+  function updateVh() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+
+  updateVh();
+
+  window.addEventListener('resize', updateVh);
+
   try {
     const books = await fetch("Books/allBooks.json").then((res) => res.json());
 
