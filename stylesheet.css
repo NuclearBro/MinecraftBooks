@@ -20,9 +20,7 @@ body {
     background-attachment: fixed;
     transform-origin: center;
     position: relative;
-    min-height: 110vh !important;
-    min-width: 100% !important;
-    width: 100% !important;
+    max-height: 90vh !important;
     }
     
     .book-item img {
