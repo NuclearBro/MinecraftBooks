@@ -12,6 +12,14 @@ body {
     background-attachment: fixed;
   }
 
+  @media screen and (max-width: 768px) {
+    body {
+        transform: rotate(90deg);
+        transform-origin: center center;
+        overflow-x: hidden; 
+      }
+  }
+
   body.no-scroll {
     overflow: hidden;
   }

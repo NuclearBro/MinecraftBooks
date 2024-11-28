@@ -62,12 +62,3 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   showSlides();
 });
-document.addEventListener("DOMContentLoaded", () => {
-  const isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
-
-  if (isMobile) {
-      document.body.style.transform = "rotate(90deg)";
-      document.body.style.transformOrigin = "center center";
-      document.body.style.overflowX = "hidden"; // Prevent horizontal scrolling
-  }
-});
