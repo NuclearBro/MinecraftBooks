@@ -2,7 +2,6 @@ body {
     font-family: 'Minecraftia', sans-serif;
     font-weight: normal;
     font-style: normal;
-    background-color: blue;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -13,7 +12,7 @@ body {
     overflow: auto;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 600px) {
     body {
     background-image: url('Assets/MobileBackground.png');
     background-size: cover;
