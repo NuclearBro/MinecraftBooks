@@ -12,6 +12,7 @@ body {
     background-attachment: fixed;
     overflow: auto;
     height: 110%;
+    min-height: 110%;
   }
 
   @media only screen and (max-width: 600px) {
