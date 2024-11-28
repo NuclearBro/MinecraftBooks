@@ -18,6 +18,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     transform-origin: center;
+    height: 100vh;
+    width: auto;
     }
     
     .book-item img {
