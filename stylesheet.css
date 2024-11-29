@@ -21,9 +21,7 @@ body {
     background-attachment: fixed;
     transform-origin: center;
     position: relative;
-    overflow-y: scroll !important;
-    -webkit-overflow-scrolling:touch !important;
-    transition: height 99999999s !important;
+    transition: background-size 99999s ease;
     }
     
     .book-item img {
