@@ -29,7 +29,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 25em;
+    height: 25em !important;
   }
 
   .book-item img {
