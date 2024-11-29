@@ -28,6 +28,7 @@ body {
     background-image: url('Assets/MobileBackground.png');
     background-repeat: no-repeat;
     background-attachment: scroll;
+    background-size: 100% + 60px;
   }
 
   .book-item img {
