@@ -16,7 +16,7 @@ body {
   @media only screen and (max-width: 600px) {
     body {
     background-image: url('Assets/MobileBackground.png');
-    background-color: rgb(121, 121, 121);
+    background-color: rgb(76, 31, 2);
     background-size: 25em;
     background-repeat: no-repeat;
     background-attachment: fixed;
