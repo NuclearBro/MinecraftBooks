@@ -16,7 +16,6 @@ body {
   @media only screen and (max-width: 600px) {
     body {
     background-image: url('Assets/MobileBackground.png');
-    background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     transform-origin: center;
@@ -51,6 +50,31 @@ body {
       max-height: 50vh;
     }
   }
+
+  @media (max-device-aspect-ratio: 3/4) {
+      body {
+          height: calc(100vw * 1.333 - 9%);
+      }
+  }
+
+  @media (max-device-aspect-ratio: 2/3) {
+      body {
+          height: calc(100vw * 1.5 - 9%);
+      }
+  }
+
+  @media (max-device-aspect-ratio: 10/16) {
+      body {
+          height: calc(100vw * 1.6 - 9%);
+      }
+  }
+
+  @media (max-device-aspect-ratio: 9/16) {
+      body {
+          height: calc(100vw * 1.778 - 9%);
+      }
+  }
+
 
   body.no-scroll {
     overflow: hidden;
