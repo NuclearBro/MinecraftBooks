@@ -6,20 +6,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const overlayContent = document.getElementById("overlay-content");
   const closeButton = document.getElementById("close-button");
 
-  // Function to resize background
-  function resizeBackground() {
-    const bg = document.querySelectorAll("#bg1, #bg2");
-    bg.forEach(element => {
-      element.style.height = `${window.innerHeight}px`;
-    });
-  }
-
-  // Initial resize
-  resizeBackground();
-
-  // Resize on window resize
-  window.addEventListener('resize', resizeBackground);
-
   try {
     const books = await fetch("Books/allBooks.json").then((res) => res.json());
 
