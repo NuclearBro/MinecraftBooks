@@ -1,238 +1,245 @@
 body {
-    font-family: 'Minecraftia', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    background-color: rgb(121, 121, 121);
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    background-image: url('Assets/Background.png');
+  font-family: 'Minecraftia', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  background-color: rgb(121, 121, 121);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  position: relative;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url('Assets/Background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+  .background-container {
+    background-image: url('Assets/MobileBackground.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow: auto;
   }
 
-  @media only screen and (max-width: 600px) {
-    body {
-    background-image: url('Assets/MobileBackground.png');
-    background-size: 24em;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    transform-origin: center;
-    position: relative;
-    }
-    
-    .book-item img {
-      width: 50px;
-      height: 50px;
-    }
-  
-    .book-item h3 {
-      font-size: 1rem;
-    }  
-
-    .book-content {
-      min-height: 85vh !important; 
-      max-height: 85vh !important; 
-    }
-
-    .overlay-scrollable-content {
-      max-height: 66vh !important; 
-    }
-
-    .book-item {
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    .container-slideshow {
-      max-height: 50vh;
-    }
-  }
-
-  body.no-scroll {
-    overflow: hidden;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    background-color: rgb(121, 121, 121, 0.5);
-    border-radius: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    position: relative;
-    height: auto;
-  }
-  
-  header {
-    border-bottom: 2px solid black;
-    padding-bottom: 10px;
-    background: rgb(121, 121, 121, 0.4);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
-  }
-  
-  h1 {
-    color: black;
-  }
-  
-  .book-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .book-item {
-    text-align: center;
-    background: rgb(121, 121, 121, 0.4);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-  }
-
-  .book-item:hover {
-    background: rgb(121, 121, 121, 0.7);
-    transform: scale(1.05);
-  }
-  
   .book-item img {
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    display: block;
+    width: 50px;
+    height: 50px;
   }
-  
+
   .book-item h3 {
-    color: black;
-    margin: 10px 0 0;
+    font-size: 1rem;
   }
-  
-  .book-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .book-overlay.hidden {
-    display: none;
-  }
-  
+
   .book-content {
-    background: url('Assets/Page.png') no-repeat center top;
-    background-size: 100% 100%; 
-    padding: 40px 55px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 500px;
-    color: black;
-    text-align: left;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    min-height: 90vh;
-    max-height: 90vh; 
-    overflow-y: auto; 
-    position: relative;
+    min-height: 85vh !important;
+    max-height: 85vh !important;
   }
-  
+
   .overlay-scrollable-content {
-    max-height: 70vh; 
-    overflow-y: auto; 
+    max-height: 66vh !important;
   }
 
-  .overlay-scrollable-content::-webkit-scrollbar {
-    width: 8px;
-    background-color: rgb(161, 161, 161);
-  }
-  
-  .overlay-scrollable-content::-webkit-scrollbar-thumb {
-    background: rgb(121, 121, 121);
-    height: 15px;
-  }
-  
-  .overlay-scrollable-content::-webkit-scrollbar-thumb:hover {
-    background: rgb(101, 101, 101);
-  }
-  
-  .book-content h2, .book-content h3 {
-    color: black;
-  }
-  
-  #close-button {
-    background: rgb(121, 121, 121);
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    float: right;
-    border-radius: 1px;
-  }
-  
-  #close-button:hover {
-    background: rgb(101, 101, 101);
-  }
-
-  #our-world {
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .slideshow-container {
-    position: relative;
-    max-width: 100%;
-    margin: auto;
+  .book-item {
+    -webkit-tap-highlight-color: transparent;
   }
 
   .container-slideshow {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    background-color: rgb(121, 121, 121, 0.5);
-    border-radius: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    position: relative;
-    height: auto;
-    padding-bottom: 20px;
-    z-index: 1;
+    max-height: 50vh;
   }
+}
 
-  .mySlides {
-    position: absolute;
-    opacity: 0; 
-    transition: opacity 1.5s ease-in-out;
-  }
+body.no-scroll {
+  overflow: hidden;
+}
 
-  .mySlides.active {
-    opacity: 1; 
-  }
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(121, 121, 121, 0.5);
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  height: auto;
+}
 
-  .mySlides img {
-    width: 100%;
-    border-radius: 10px;
-  }
+header {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  background: rgb(121, 121, 121, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
 
-  .fade {
-    animation-name: fade;
-    animation-duration: 2s;
-  }
+h1 {
+  color: black;
+}
 
-  @keyframes fade {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
-  }
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.book-item {
+  text-align: center;
+  background: rgb(121, 121, 121, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.book-item:hover {
+  background: rgb(121, 121, 121, 0.7);
+  transform: scale(1.05);
+}
+
+.book-item img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  display: block;
+}
+
+.book-item h3 {
+  color: black;
+  margin: 10px 0 0;
+}
+
+.book-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-overlay.hidden {
+  display: none;
+}
+
+.book-content {
+  background: url('Assets/Page.png') no-repeat center top;
+  background-size: 100% 100%;
+  padding: 40px 55px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  color: black;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  min-height: 90vh;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.overlay-scrollable-content {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.overlay-scrollable-content::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgb(161, 161, 161);
+}
+
+.overlay-scrollable-content::-webkit-scrollbar-thumb {
+  background: rgb(121, 121, 121);
+  height: 15px;
+}
+
+.overlay-scrollable-content::-webkit-scrollbar-thumb:hover {
+  background: rgb(101, 101, 101);
+}
+
+.book-content h2, .book-content h3 {
+  color: black;
+}
+
+#close-button {
+  background: rgb(121, 121, 121);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  float: right;
+  border-radius: 1px;
+}
+
+#close-button:hover {
+  background: rgb(101, 101, 101);
+}
+
+#our-world {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.container-slideshow {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(121, 121, 121, 0.5);
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  height: auto;
+  padding-bottom: 20px;
+  z-index: 1;
+}
+
+.mySlides {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.mySlides.active {
+  opacity: 1;
+}
+
+.mySlides img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
