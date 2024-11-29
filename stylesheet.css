@@ -27,7 +27,7 @@ body {
   .background-container {
     background-image: url('Assets/MobileBackground.png');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 
   .book-item img {
