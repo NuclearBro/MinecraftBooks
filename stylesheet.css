@@ -26,10 +26,10 @@ body {
 @media only screen and (max-width: 767px) {
   .background-container {
     background-image: url('Assets/MobileBackground.png');
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100lvh;
+    height: 100lvh !important;
   }
 
   .book-item img {
