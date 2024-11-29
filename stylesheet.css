@@ -21,6 +21,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: -1;
+  -webkit-background-size: cover;
 }
 
 @media only screen and (max-width: 767px) {
