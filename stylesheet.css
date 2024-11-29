@@ -16,12 +16,22 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  background-image: url('Assets/Background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   z-index: -1;
 }
 
 @media only screen and (max-width: 767px) {
   .background-container {
-    min-height: calc(100lvh + 100px) !important;
+    background-image: url('Assets/MobileBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
   }
 
   .book-item img {
