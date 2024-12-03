@@ -17,12 +17,16 @@ document.addEventListener("DOMContentLoaded", async () => {
         <h3>${book.title}</h3>
       `;
       bookItem.addEventListener("click", () => {
-        overlayTitle.textContent = book.title;
-        overlayAuthor.textContent = `By ${book.author}`;
-        overlayContent.textContent = book.content;
-        
-        overlay.classList.remove("hidden");
-        document.body.classList.add("no-scroll");
+        const img = new Image();
+        img.src = 'Assets/Page.png';
+        img.onload = () => {
+          overlayTitle.textContent = book.title;
+          overlayAuthor.textContent = `By ${book.author}`;
+          overlayContent.textContent = book.content;
+          
+          overlay.classList.remove("hidden");
+          document.body.classList.add("no-scroll");
+        };
       });
       bookGrid.appendChild(bookItem);
     });
