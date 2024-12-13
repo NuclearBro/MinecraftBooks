@@ -146,6 +146,8 @@ body {
     max-height: 90vh; 
     overflow-y: auto; 
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
   
   .overlay-scrollable-content {
@@ -169,6 +171,9 @@ body {
   
   .book-content h2, .book-content h3 {
     color: black;
+    margin: 0;
+    padding-bottom: 10px;
+    word-wrap: break-word;
   }
   
   #close-button {
@@ -179,6 +184,8 @@ body {
     cursor: pointer;
     float: right;
     border-radius: 1px;
+    width: 30px;
+    margin-left: 96%;
   }
   
   #close-button:hover {
