@@ -33,8 +33,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const urlParams = new URLSearchParams(window.location.search);
     const bookTitleToOpen = urlParams.get('book');
+
     if (bookTitleToOpen) {
-      const bookToOpen = books.find(book => book.title === bookTitleToOpen);
+      const decodedBookTitle = decodeURIComponent(bookTitleToOpen);
+      
+      const bookToOpen = books.find(book => book.title.toLowerCase() === decodedBookTitle.toLowerCase());
+
       if (bookToOpen) {
         const img = new Image();
         img.src = 'Assets/Page.png';
@@ -83,5 +87,4 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   showSlides();
-
 });
