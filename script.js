@@ -30,6 +30,21 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
       bookGrid.appendChild(bookItem);
     });
+
+    // Check if URL contains a specific book title to open
+    const urlParams = new URLSearchParams(window.location.search);
+    const bookTitleToOpen = urlParams.get('book');
+    if (bookTitleToOpen) {
+      const bookToOpen = books.find(book => book.title === bookTitleToOpen);
+      if (bookToOpen) {
+        overlayTitle.textContent = bookToOpen.title;
+        overlayAuthor.textContent = `By ${bookToOpen.author}`;
+        overlayContent.textContent = bookToOpen.content;
+        
+        overlay.classList.remove("hidden");
+        document.body.classList.add("no-scroll");
+      }
+    }
   } catch (error) {
     console.error("Failed to load books:", error);
     bookGrid.innerHTML = "<p>Could not load books. Please try again later.</p>";
