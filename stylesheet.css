@@ -148,6 +148,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden; 
   }
   
   .overlay-scrollable-content {
